@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+    </head>
+    <form class="classForm" id="subscribeForm">       
+        <body class="classBody">
+            <h1 class="classForm">FORMULARIO</h1>
+            <div>
+                <input name="nome" type="text" id ="nome" placeholder="Nome" class="divForm" [(ngModel)] = "formulario.name">
+            </div>
+            <div>
+                <input name="email" type="email" id ="email" placeholder="Email" class="divForm" [(ngModel)] = "formulario.email">
+            </div>    
+            <div>
+                <input name="estadoCivil" type="text" id ="estadoCivil" placeholder="Estado Civil" class="divForm" [(ngModel)] = "formulario.estadoCivil">
+            </div>
+            <div>
+                <input name="endereco" type="text"  id ="endereco" placeholder="Endereco" class="divForm" [(ngModel)] = "formulario.endereco">
+            </div>                  
+                       
+            <button type="button" (click)="CadastrarDadosFormulario()" class="btn">CADASTRAS</button>
+        </body>
+    </form>
+        
+    <hr>
+    <div class="classForm">
+        <br>
+        <br>
+        <table class="classForm">
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Estado Civil</th>
+                <th>Endereco</th>
+            </tr>
+            <tr *ngFor="let dados of dados">
+                <th>{{dados.name}}</th>
+                <th>{{dados.email}}</th>
+                <th>{{dados.estadoCivil}}</th>
+                <th>{{dados.endereco}}</th>
+            </tr>
+        </table>
+    </div>
+</html>

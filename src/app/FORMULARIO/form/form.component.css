@@ -1,0 +1,32 @@
+.classForm{
+    text-align: center;
+    width:100%;
+    
+}
+.divForm{
+    margin:15px;
+    padding: 6px;
+    text-align: center;
+    border:  2px solid #04c1f0;
+    border-radius: 18px;    
+    width:20%;
+}
+
+.btn{    
+        color: #f2f2f2;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: #0c9abe;
+        border: #0c9abe;
+}
+
