@@ -3,7 +3,7 @@ import { Formulario } from '../Models/form.models';
 import { Observable,of } from 'rxjs'
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 
-const apiUrl = 'http://localhost:8080'
+const apiUrl = 'http://18.228.190.155:8080'
 
 @Injectable({
   providedIn: 'root'
