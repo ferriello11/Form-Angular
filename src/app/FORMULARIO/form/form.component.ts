@@ -1,9 +1,6 @@
 import { Component, OnInit, Input, ɵConsole } from '@angular/core';
 import { Formulario } from '../Models/form.models';
 import { ApiFormularioService } from '../API/api-formulario.service';
-import { Console } from 'console';
-import { mapToMapExpression } from '@angular/compiler/src/render3/util';
-// import { Console } from 'console';
 
 @Component({
   selector: 'app-form',
@@ -19,13 +16,14 @@ export class FormComponent implements OnInit {
   constructor(private apiForm: ApiFormularioService) { }
 
   ngOnInit() {
-    this.ListadosCadastrosForm();
+    // this.ListadosCadastrosForm();
+    this.apiForm.listar();
   }  
 
   CadastrarDadosFormulario(){  
     this.apiForm.postForm(this.formulario).subscribe(fomr =>{
       this.formulario =  new Formulario;
-      this.ListadosCadastrosForm();
+      // this.ListadosCadastrosForm();
     }, err =>{
       console.log('Erro ao cadastrar Aluno', err)
     })
